@@ -1,6 +1,11 @@
-import Reach from 'react'; // optional
+import React, { useState } from "react";
+// Since we don't HAVE to import React explicitly, we can also just type this:
+// import { useState } from "react";
 
-function AngryButton() {
+function AngryButton(props) {
+
+  const [anger, setAnger] = useState();
+
   return (
     <button className="AngryButton">
       {/* If you have NOT reached the maximum */}
